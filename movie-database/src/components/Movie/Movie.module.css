@@ -1,33 +1,36 @@
-.movie{
-    margin-bottom: 1rem;
-}
-
+/* Untuk tampilan gambar pada elemen dengan kelas 'movie__image' */
 .movie__image {
-    border-radius: 25px;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
+    border-radius: 25px; /* Memberikan sudut lengkung pada gambar */
+    max-width: 100%;    /* Membuat gambar tidak melebihi lebar parent-nya */
+    height: auto;       /* Menjaga aspek ratio gambar */
+    margin-bottom: 1rem; /* Menambahkan margin ke bawah sebesar 1rem */
 }
 
+/* Untuk judul film pada elemen dengan kelas 'movie__title' */
 .movie__title {
-    color: #4361ee;
-    font-size: 1.95rem;
-    margin-bottom: 0.5rem;
+    color: #4361ee;     /* Warna teks */
+    font-size: 1.95rem; /* Ukuran font */
+    margin-bottom: 0.5rem; /* Menambahkan margin ke bawah sebesar 0.5rem */
 }
 
+/* Untuk tanggal pada elemen dengan kelas 'movie__date' */
 .movie__date {
-    color: #64748b;
+    color: #64748b; /* Warna teks */
 }
 
+/* Media Query untuk layar berlebar 768px atau lebih besar */
 @media (min-width: 768px) {
     .movie {
-        flex-basis: 50%;
+        flex-basis: 50%; /* Lebar elemen setengah dari parent-nya */
     }
 }
 
+/* Media Query untuk layar berlebar 992px atau lebih besar */
 @media (min-width: 992px) {
     .movie {
-        flex-basis: 25%;
-        padding: 1rem;
+        flex-basis: 25%; /* Lebar elemen seperempat dari parent-nya */
+        padding: 1rem;   /* Memberikan padding sebesar 1rem di sekitar elemen */
     }
 }
+
+/* Menggunakan media queries membantu membuat tata letak yang responsif */
